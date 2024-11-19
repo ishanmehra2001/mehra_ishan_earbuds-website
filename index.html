@@ -1,0 +1,268 @@
+<!doctype HTML>
+<html lang="en">
+  <head>
+    <title>Ishan_earbuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="grid/grid.css" rel="stylesheet"/>
+    <!-- linking html to greensock main library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <div class="nav"><nav>
+        <a href="#details-section"><button >Specifications</button></a>
+        <a href="#lookbook"><button>Gallery</button></a>
+        <a href="#x-ray-con"><button>X-ray</button></a>
+        <a href="#contact-section"><button>Contact</button></a>
+      </nav>
+    </div>
+    </header> 
+
+    <main>
+      <section id="landing-page">
+        <div class="land-img">
+          <img id="landImage" src="images/image1.png" alt="Land Image">
+          <div class="color-btn">
+            <button onclick="changeImage('blue')">BLUE</button>
+            <button onclick="changeImage('black')">BLACK</button>
+            <button onclick="changeImage('red')">RED</button>
+            <button onclick="changeImage('white')">WHITE</button>
+          </div>
+        </div>
+
+        <div class="land-text">
+          <h1 class="land-title">RESONATE</h1>
+          <p class="land-subtitle">NEXT GEN</p>
+          <p class="land-desc">"Experience the new Resonate earbuds with wireless charging, extended battery life, dual-device connectivity, and hands-free voice commands. Coming soon to elevate your listening."</p>
+          <button class="more-btn">Know more!</button>
+        </div>
+        
+        <div class="land-img2">
+          <img src="images/image2.png">
+        </div>
+      </section>
+
+<section id="why-resonate">
+  <div class="why-resonate-img">
+    <img src="images/boy-bud.png">
+  </div>
+  <div class="why-resonate-text">
+    <h1 class="sub-color why-title">WHY?</h1> 
+    <h1 class="head-color">RESONATE</h1>
+    <p class="paragraph-color">"From premium sound quality to hands-free convenience, Resonate offers the ultimate earbud experience. With features designed for the modern listener, Resonate brings you the freedom, control, and style you deserve."</p>
+    <button>Buy Now</button>
+  </div>
+</section>
+
+
+
+<section id="scroll-animation">
+ 
+   <div>
+    <h2 class="head-color">MOTION ZONE</h2>
+    <canvas id="explode-view"></canvas> 
+   </div>
+</section>
+
+
+<section id="lookbook">
+  <h1 class="lookbook">LookBook</h1>
+  <div class="gallery-container">
+    <button class="prev-btn" onclick="changeGalleryImage(-1)">&#10094;</button>
+    
+    <img id="gallery-image" src="images/POSTER-4.jpg" alt="Gallery Image">
+    
+    <button class="next-btn" onclick="changeGalleryImage(1)">&#10095;</button>
+</div>
+
+<div class="video-con">
+<video controls preload="metadata" poster="images/image1.png" src="video/ad-video.mp4">
+</video>
+</div>
+</section>
+
+
+  
+<div class="col-span-full">
+ 
+  <div id="x-ray-con"> 
+             <h2>X-RAY VIEW</h2>
+             <div class="xray-mobile">
+            <img src="images/xray-top.png">
+            <img src="images/xray-bottom.png">
+
+            
+          </div>
+          <div class="xray-text">"Discover the inner workings of Resonate earbuds. With a powerful battery, precision speaker driver, and Bluetooth antenna for stable connectivity, every component is crafted for peak performance. The play-pause sensor, microphone, microchip, and charging slots work together seamlessly, delivering quality sound and convenience in every moment."</div>
+  </div>
+  
+      <div id="comparison-con">
+          <div id="xray"> 
+              <div id="divisor"></div>
+          </div>  
+
+    <input type="range" min="0" max="100" value="50" id="slider">
+ </div>
+ 
+</div>
+
+
+
+
+<div id="details-section">
+  <h1 class="details-title">DETAILS</h1>
+  <p class="details-subtitle">"Explore the innovative features of Resonate earbuds, designed for exceptional sound, comfort, and performance. Learn what makes them stand out below."</p>
+  
+  <div class="box-content">
+    <div class="box-header">
+      <div class="box-info">
+        <h2>What's in the box?</h2>
+        <ul>
+          <li>Resonate Earbuds (left and right pair)</li>
+          <li>Charging Case</li>
+          <li>USB-C Charging Cable</li>
+          <li>Silicone Tips (various sizes for a custom fit)</li>
+          <li>User Manual</li>
+          <li>Quick Start Guide</li>
+          <li>Warranty Card</li>
+          <li>Carrying Pouch</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="features-content">
+    <div class="features-header">
+      <img class="image-placeholder" src="images/details-img.png">
+      <div class="features-info">
+        <h2>Features</h2>
+        <div class="features-list">
+          <ul>
+            <li>High-Fidelity Sound</li>
+            <li>Active Noise Cancellation</li>
+            <li>ComfortFit Design</li>
+            <li>Long Battery Life</li>
+            <li>Quick Charge</li>
+            <li>Bluetooth 5.0 Connectivity</li>
+          </ul>
+          <ul>
+            <li>Touch Controls</li>
+            <li>IPX7 Water Resistance</li>
+            <li>Built-in Microphone</li>
+            <li>Dual Device Connectivity</li>
+            <li>Sleek Charging Case</li>
+            <li>Voice Assistant Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="details-button">Details In Depth</button>
+  </div>
+</div>
+
+
+
+<!--model viewer-->
+<model-viewer id="model" src="model/earbuds_2024.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.07" environment-image="model/studio_small_09_8k.hdr">
+     
+     
+  <button class="hotspot" slot="hotspot-1" data-position="-2.1962142981302204m -0.66911144629734m -2.468552748802964m" data-normal="-0.048240324603482876m 0.016303965422151578m -0.9987026843829268m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">
+        <h2></h2>
+        <p></p>
+        <img>
+      </div>
+  </button>
+  
+  <button class="hotspot" slot="hotspot-2" data-position="0.8346002183375707m 0.9510862129963416m 0.7014103379265029m" data-normal="0.06515625138429774m 0.8102770561764502m 0.5824137319290921m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">
+        <h2></h2>
+        <p></p>
+        <img>
+      </div>
+  </button>
+  
+  <button class="hotspot" slot="hotspot-3" data-position="-2.2919281130449027m -5.533467224336521m -1.1530709190289732m" data-normal="-0.35408915451172623m -0.46962817466395007m 0.8087460962619711m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">
+        <h2></h2>
+        <p></p>
+        <img>
+      </div>
+  </button>
+  
+  <button class="hotspot" slot="hotspot-4" data-position="-2.263781338793401m 0.3426803703964415m -2.2531012871858778m" data-normal="-0.07926645521850638m 0.9966508151798127m 0.020099295472906748m" data-visibility-attribute="visible">
+    <div class="HotspotAnnotation">
+      <h2></h2>
+      <p></p>
+      <img>
+    </div>
+  </button>
+
+  <div class="progress-bar" slot="progress-bar">
+      <div class="update-bar"></div>
+  </div>
+  <button slot="ar-button" id="ar-button">
+      View in your space
+  </button>
+ 
+</model-viewer> 
+<!--model viewer-->
+
+
+
+
+
+<div id="contact-section">
+  <h1 class="contact-title">CONTACT</h1>
+  
+  <div class="contact-content">
+    <div class="form-section">
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    
+    <div class="logo-section">
+      <!-- Placeholder for the Resonate logo -->
+      <div class="logo-placeholder"><img src="images/R.svg"></div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-logo">
+      <img class="footer-logo-img" src="images/logo.svg">
+    </div>
+    <div class="social-icons">
+      <a href="#" class="icon"><img src="images/Facebook.svg"></a>
+      <a href="#" class="icon"><img src="images/X-Icon.svg"></a>
+      <a href="#" class="icon"><img src="images/Instagram-Icon.svg"></a>
+    </div>
+  </footer>
+
+
+
+
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="js/main.js"></script>
+   
+
+
+     
+       
+      
+  </body>
+</html>
