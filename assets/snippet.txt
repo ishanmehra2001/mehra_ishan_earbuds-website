@@ -1,0 +1,20 @@
+<model-viewer src="earbuds 2024.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.07" environment-image="studio_small_09_8k.hdr">
+    <button class="Hotspot" slot="hotspot-1" data-position="-2.1962142981302204m -0.66911144629734m -2.468552748802964m" data-normal="-0.048240324603482876m 0.016303965422151578m -0.9987026843829268m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">SENSOR</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.8346002183375707m 0.9510862129963416m 0.7014103379265029m" data-normal="0.06515625138429774m 0.8102770561764502m 0.5824137319290921m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">SILICONE TIP</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-2.2919281130449027m -5.533467224336521m -1.1530709190289732m" data-normal="-0.35408915451172623m -0.46962817466395007m 0.8087460962619711m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">CHARGING</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="-1.6734108254134998m 0.695944195546506m -2.0607640147209167m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">MICROPHONE</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

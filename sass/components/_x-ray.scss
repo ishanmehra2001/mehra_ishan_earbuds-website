@@ -1,0 +1,142 @@
+
+
+#comparison-con{
+  display: none;
+}
+
+#x-ray-con{
+  height: 450px;
+  padding-top: 40px;
+  margin-bottom: 5%;
+}
+
+#x-ray-con h2{
+  color: #FFA773;
+  font-size: 30px;
+  padding-left: 10px;
+  border-top: 2px solid #FFA773;
+}
+
+#x-ray-con img{
+  width: 80%;
+  margin:  0 45px auto;
+  padding-top: 10px;
+  filter: drop-shadow(0 0 20px #002aff);
+  
+}
+
+#x-ray h2{
+  color: #FFA773;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.xray-text{
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px 30px auto;}
+
+
+
+@media screen and (min-width: 768px) {
+  
+  .xray-mobile{
+    display: none;
+  }
+
+  #comparison-con{
+    display: block;
+    margin-top: -330px;
+    margin-bottom: 10% ;
+  
+  }
+
+.xray-text{
+  font-size: 16px;
+  margin: 68% 20% auto;
+  
+}
+
+#xray{
+  position: relative;
+  aspect-ratio: 17.6/10;
+  background-image: url(../images/xray-top.png);
+  background-size: cover;
+  margin: 0 10% auto;
+}
+
+#divisor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url(../images/xray-bottom.png);
+  background-size: cover;
+  margin: 0 10%px auto;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: -18px;
+  left: -2%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 102%;
+  
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  height: 15px;
+  width: 98%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  outline: none;
+}
+
+input[type=range]::active {
+  border: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  background: #3b46e1;
+  border-radius: 10px;
+  box-shadow: #3b46e1 0px 0px 10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  background: rgba(235, 43, 43, 0.5);
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#slider{
+  background-color: gray;
+  width: 80%;
+  margin-left: 12%;
+}
+
+}
