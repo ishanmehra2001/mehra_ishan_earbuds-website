@@ -256,7 +256,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
           scrollTrigger: {
               trigger:".box-content", // you can change the trigger class if you want animation to happen on crossing different div
               toggleActions: "restart none none none",//onEnter, onLeave, onEnterBack, onLeaveBack.
-              markers: true, 
+              markers: false, 
               start: "-100 50%", //animation box starts, scroller start
               end: "bottom 50%", //animation box ends, scroller end
           },
@@ -268,7 +268,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
         scrollTrigger: {
             trigger:".features-content", // you can change the trigger class if you want animation to happen on crossing different div
             toggleActions: "restart none none none",//onEnter, onLeave, onEnterBack, onLeaveBack.
-            markers: true, 
+            markers: false, 
             start: "-100 50%", //animation box starts, scroller start
             end: "bottom 50%", //animation box ends, scroller end
         },
@@ -283,7 +283,7 @@ gsap.to(".contact-content", 1.2,
       scrollTrigger: {
           trigger:".contact-content", // you can change the trigger class if you want animation to happen on crossing different div
           toggleActions: "restart none pause pause",//onEnter, onLeave, onEnterBack, onLeaveBack.
-          markers: true, 
+          markers: false, 
           start: "-150 50%", //animation box starts, scroller start
           end: "-20 50%", //animation box ends, scroller end
       },
