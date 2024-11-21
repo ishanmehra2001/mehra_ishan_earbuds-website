@@ -121,6 +121,7 @@ body {
   height: 300px;
   border-radius: 30px;
   overflow: hidden;
+ 
 }
 
 .why-resonate-img img {
@@ -134,6 +135,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   align-content: center;
+  
 }
 
 .why-title {
@@ -292,6 +294,7 @@ button:hover{
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 15px;
+  opacity: 0;
 }
 
 .box-header, .features-header {
@@ -379,6 +382,8 @@ button:hover{
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
+  scale: 0.05;
+  opacity: 0;
 }
 
 .form-section form {
@@ -684,6 +689,7 @@ button:hover{
     border-radius: 10px;
     padding: 20px;
     margin-top: 40px;
+    opacity: 0;
   }
 
   .box-header, .features-header {
@@ -957,6 +963,11 @@ button:hover{
   margin-top: 10px;
   text-align: left;
   font-size: 55px !important;
+}
+
+.box-content, .features-content {
+
+  opacity: 0;
 }
 
 
