@@ -246,25 +246,57 @@ const onProgress = (event) => {
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
 
-// (() => {
+(() => {
 
-//   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
 
-//   gsap.to("#why-resonate", 2,
-//       {
-//           scrollTrigger: {
-//               trigger:".land-text", // you can change the trigger class if you want animation to happen on crossing different div
-//               toggleActions: "restart none reverse none",//onEnter, onLeave, onEnterBack, onLeaveBack.
-//               markers: true, 
-//               start: "top center", //animation box starts, scroller start
-//               end: "bottom center", //animation box ends, scroller end
-//           },
-//           x:-40,
-//       }
-//   )
+  gsap.to(".box-content", 1.2,
+      {
+          scrollTrigger: {
+              trigger:".box-content", // you can change the trigger class if you want animation to happen on crossing different div
+              toggleActions: "restart none none none",//onEnter, onLeave, onEnterBack, onLeaveBack.
+              markers: true, 
+              start: "-100 50%", //animation box starts, scroller start
+              end: "bottom 50%", //animation box ends, scroller end
+          },
+          opacity:1,
+      }
+  )
+  gsap.to(".features-content", 1.2,
+    {
+        scrollTrigger: {
+            trigger:".features-content", // you can change the trigger class if you want animation to happen on crossing different div
+            toggleActions: "restart none none none",//onEnter, onLeave, onEnterBack, onLeaveBack.
+            markers: true, 
+            start: "-100 50%", //animation box starts, scroller start
+            end: "bottom 50%", //animation box ends, scroller end
+        },
+        opacity:1,
+    }
 
-// })();
+    
+)
+
+gsap.to(".contact-content", 1.2,
+  {
+      scrollTrigger: {
+          trigger:".contact-content", // you can change the trigger class if you want animation to happen on crossing different div
+          toggleActions: "restart none pause pause",//onEnter, onLeave, onEnterBack, onLeaveBack.
+          markers: true, 
+          start: "-150 50%", //animation box starts, scroller start
+          end: "-20 50%", //animation box ends, scroller end
+      },
+      scale:20,
+      opacity:1,
+  }
+
+  
+)
+
+
+
+})();
 
 
 
