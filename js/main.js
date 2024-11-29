@@ -303,4 +303,5 @@ gsap.to(".contact-content", 1.2,
 //video playeer
 (() => {
 const player = new Plyr('video');
+Video.controls = false;
 })();
